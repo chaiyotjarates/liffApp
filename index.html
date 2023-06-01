@@ -76,18 +76,15 @@
       });
     }
 
-    async function sendMsg() {
-      liff
-      .sendMessages([
+    function sendMsg() {
+      liff.sendMessages([
         {
           type: "text",
           text: "Hello, World!",
         },
-      ])
-      .then(() => {
+      ]).then(() => {
         console.log("message sent");
-      })
-      .catch((err) => {
+      }).catch((err) => {
         console.log("error", err);
       });
       // if(liff.getContext().type !== "none"){
