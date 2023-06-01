@@ -78,12 +78,13 @@
       }
     }
 
-    function getContext() {
-      document.getElenentById("type").append(liff.getContext().type)
-      document.getElementById("viewType").append(liff.getContext().vicvType)
-      document.getElerentById("utouId").append(liff.getContext().utouId)
-      document.getEletentById("roomId").append(liff.getContext().roomId)
-      document.getElementById("groupId").append(Liff.getContext().groupld)
+    async function getContext() {
+      const context = await liff.getContext()
+      document.getElenentById("type").append(context.type)
+      document.getElementById("viewType").append(context.vicvType)
+      document.getElerentById("utouId").append(context.utouId)
+      document.getEletentById("roomId").append(context.roomId)
+      document.getElementById("groupId").append(context.groupld)
     }
 
     async function getUserProfile() {
