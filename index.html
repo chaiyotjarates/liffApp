@@ -77,34 +77,34 @@
       });
     }
 
-    // function sendMessage() {
-    //   liff
-    //     .sendMessages([{ "type": "sticker", "stickerId": "446", "packageId": "1988" }])
-    //     .then(() => {
-    //       window.alert("Message has been sent");
-    //     })
-    //     .catch(e => {
-    //       window.alert(e);
-    //     });
-    // }
-
-    async function sendMsg() {
-  liff.sendMessages([
-    {
-      type: "text",
-      text: "Hello, World!",
-    },
-  ])
-  .then(() => {
-    console.log("message sent");
-  })
-  .catch((err) => {
-    console.log("error", err);
-  });
-      
-      
-      
+    async function sendMessage() {
+      liff
+        .sendMessages([{ "type": "sticker", "stickerId": "446", "packageId": "1988" }])
+        .then(() => {
+          window.alert("Message has been sent");
+        })
+        .catch(e => {
+          window.alert(e);
+        });
     }
+
+  //   async function sendMsg() {
+  // liff.sendMessages([
+  //   {
+  //     type: "text",
+  //     text: "Hello, World!",
+  //   },
+  // ])
+  // .then(() => {
+  //   console.log("message sent");
+  // })
+  // .catch((err) => {
+  //   console.log("error", err);
+  // });
+      
+      
+      
+  //   }
     
 
     async function getUserContext() {
