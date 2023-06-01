@@ -103,8 +103,8 @@
       document.getElementById("os").append(liff.getOS())
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("accessToken").append(liff.getAccessToken())
-      document.getElementById("isInClient").append(liff.isInClient())
-      document.getElementById("isLoggedIn").append(liff.isLoggedIn())
+      document.getElementById("isInClient").append(liff.getInClient())
+      document.getElementById("isLoggedIn").append(liff.getLoggedIn())
       document.getElementById("friendship").append(liff.getFriendship())
 
       if (liff.isInClient()){
