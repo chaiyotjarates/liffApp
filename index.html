@@ -104,6 +104,9 @@
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("accessToken").append(liff.getAccessToken())
       document.getElementById("isInClient").append(liff.isInClient())
+      document.getElementById("isLoggedIn").append(liff.isLoggedIn())
+      document.getElementById("friendship").append(liff.getFriendship())
+
       if (liff.isInClient()){
         document.getElementById("btnLogOut").style.display = "none"      
       }else{
