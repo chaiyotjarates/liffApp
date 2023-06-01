@@ -105,7 +105,7 @@
       document.getElementById("accessToken").append(liff.getAccessToken())
       document.getElementById("isInClient").append(liff.getInClient())
       document.getElementById("isLoggedIn").append(liff.getLoggedIn())
-      document.getElementById("friendship").append(liff.getFriendship())
+      document.getElementById("friendship").append(liff.getFriendship().friendFlag)
 
       if (liff.isInClient()){
         document.getElementById("btnLogOut").style.display = "none"      
