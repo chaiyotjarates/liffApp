@@ -80,10 +80,10 @@
 
     async function getUserContext() {
       const context = await liff.getContext()
-      document.getElenentById("type").append(context.type)
+      document.getElementById("type").append(context.type)
       document.getElementById("viewType").append(context.vicvType)
-      document.getElerentById("utouId").append(context.utouId)
-      document.getEletentById("roomId").append(context.roomId)
+      document.getElementById("utouId").append(context.utouId)
+      document.getElementById("roomId").append(context.roomId)
       document.getElementById("groupId").append(context.groupld)
     }
 
