@@ -79,7 +79,7 @@
 
     async function sendMessage() {
       liff
-        .sendMessages([{ "type": "sticker", "stickerId": "446", "packageId": "1988" }])
+        .sendMessages([{ type: "sticker", stickerId: 446, packageId: 1988 }])
         .then(() => {
           window.alert("Message has been sent");
         })
